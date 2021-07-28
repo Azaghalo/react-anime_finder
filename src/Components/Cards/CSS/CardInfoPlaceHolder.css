@@ -1,0 +1,20 @@
+.placeholder-container {
+  direction: ltr;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 20vh;
+  width: 100%;
+  border: 3px solid black;
+}
+
+.placehodlder-text {
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: min(2vw, 40px);
+}
+
+.placeholder-bg {
+  width: 100%;
+}

@@ -1,0 +1,86 @@
+.container {
+  width: 100vw;
+  height: calc(100vh - 50px);
+  display: flex;
+  position: relative;
+}
+
+.introduction {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  user-select: none;
+  pointer-events: none;
+}
+
+.split {
+  flex-grow: 1;
+  transition: 0.3s ease;
+}
+
+.anime {
+  background-image: url('../../../Images/AnimeWallpaper.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  transition: 0.5s ease;
+}
+
+.anime::before {
+  content: '';
+  background-color: rgba(26, 24, 24, 0.835);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 0.7s ease;
+}
+
+.anime::after {
+  content: '';
+  background-color: black;
+  height: 100%;
+  width: 3px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateX(50%);
+  z-index: 1;
+}
+
+.anime:hover::before {
+  background-color: rgba(28, 189, 28, 0.233);
+}
+
+.split.anime:hover {
+  flex-grow: 5;
+}
+
+.manga {
+  background-image: url('../../../Images/MangaWallpaper.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  transition: 0.5s ease;
+}
+
+.manga::before {
+  content: '';
+  background-color: rgba(26, 24, 24, 0.835);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 0.7s ease;
+}
+
+.manga:hover::before {
+  background-color: rgba(28, 189, 28, 0.233);
+}
+
+.split.manga:hover {
+  flex-grow: 5;
+}

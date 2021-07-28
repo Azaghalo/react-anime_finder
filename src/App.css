@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=B612:wght@400;700&display=swap');
+
+:root {
+  font-family: 'B612', sans-serif;
+  --primary-back-color: #292626;
+  --primary-font-color: #1cbd1c;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: min(1vw, 10px);
+  height: min(1vw, 10px);
+}
+::-webkit-scrollbar-thumb {
+  background: radial-gradient(circle, #1cbd1c 0%, #8cc28c 90%, #8cc28c 90%);
+  border-radius: 1px;
+}
+::-webkit-scrollbar-track {
+  background: #292222;
+  box-shadow: inset 0px 0px 24px -2px #337028;
+}
