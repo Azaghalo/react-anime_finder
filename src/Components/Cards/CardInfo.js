@@ -1,4 +1,5 @@
 import React from 'react';
+import banner from './banner.jpg';
 import './CSS/CardInfo.css';
 
 export const CardInfo = ({ anime }) => {
@@ -6,7 +7,7 @@ export const CardInfo = ({ anime }) => {
   const { canonicalTitle, coverImage, description, youtubeVideoId } =
     anime.attributes;
 
-  const { large } = coverImage;
+  const large = coverImage === null ? banner : coverImage.large;
 
   return (
     <div className="info-container">
